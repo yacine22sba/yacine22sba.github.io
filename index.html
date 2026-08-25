@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yacine SBA - Mathematician & Educator</title>
+    <title>Malek Yacine Rezoug - Mathematician</title>
     <style>
         * {
             margin: 0;
@@ -31,9 +31,17 @@
             margin-bottom: 0.5rem;
         }
 
-        header p {
-            font-size: 1.1rem;
+        header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+
+        header .positions {
+            font-size: 1rem;
             opacity: 0.9;
+            line-height: 1.8;
+            font-style: italic;
         }
 
         /* Navigation */
@@ -128,6 +136,34 @@
         li {
             margin-bottom: 0.5rem;
             color: #555;
+        }
+
+        /* Current Positions */
+        .current-positions {
+            background: #e3f2fd;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #1f4788;
+        }
+
+        .position-item {
+            margin-bottom: 1rem;
+        }
+
+        .position-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .position-title {
+            color: #1f4788;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .position-org {
+            color: #2d5aa8;
+            font-style: italic;
         }
 
         /* Education Block */
@@ -236,6 +272,14 @@
                 font-size: 2rem;
             }
 
+            header .subtitle {
+                font-size: 1rem;
+            }
+
+            header .positions {
+                font-size: 0.95rem;
+            }
+
             nav a {
                 padding: 0.8rem 1rem;
             }
@@ -253,14 +297,19 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>Yacine SBA</h1>
-        <p>Mathematician & Educator | ICTP Postgraduate Fellow</p>
+        <h1>Malek Yacine Rezoug</h1>
+        <p class="subtitle">Mathematician & Researcher</p>
+        <div class="positions">
+            <p>🎓 Student at ICTP for Pre-PhD Programme</p>
+            <p>🔬 Junior Researcher at RICAM</p>
+        </div>
     </header>
 
     <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#profile">Profile</a></li>
+            <li><a href="#positions">Current Positions</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#research">Research Interests</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -273,7 +322,25 @@
         <section id="profile">
             <h2>Profile</h2>
             <div class="profile-intro">
-                <p>I completed my Bachelor's and Master's studies in Mathematics at Djillali Liabès University, Algeria, where I specialized in functional analysis and differential equations. I am currently enrolled in the Postgraduate Diploma Programme in Mathematics at the Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy. My research interests include analysis, partial differential equations, geometry, dynamical systems, and optimal transport.</p>
+                <p>I completed my Bachelor's and Master's studies in Mathematics at Djillali Liabès University, Algeria, where I specialized in functional analysis and differential equations. I am currently enrolled in the Postgraduate Diploma Programme in Mathematics at the Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy, as part of my pre-PhD studies. Additionally, I serve as a junior researcher at RICAM (Radon Institute for Computational and Applied Mathematics).</p>
+                <p>My research interests include analysis, partial differential equations, geometry, dynamical systems, and optimal transport. I am passionate about advancing mathematical knowledge and contributing to the scientific community through rigorous research and collaboration.</p>
+            </div>
+        </section>
+
+        <!-- Current Positions Section -->
+        <section id="positions">
+            <h2>Current Positions</h2>
+            <div class="current-positions">
+                <div class="position-item">
+                    <div class="position-title">🎓 Student - Postgraduate Diploma Programme in Mathematics</div>
+                    <div class="position-org">Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy</div>
+                    <p style="margin-top: 0.8rem; color: #666;">Pre-PhD programme with intensive coursework and research training in modern mathematics.</p>
+                </div>
+                <div class="position-item">
+                    <div class="position-title">🔬 Junior Researcher</div>
+                    <div class="position-org">RICAM (Radon Institute for Computational and Applied Mathematics)</div>
+                    <p style="margin-top: 0.8rem; color: #666;">Contributing to cutting-edge research in applied and computational mathematics.</p>
+                </div>
             </div>
         </section>
 
@@ -325,11 +392,12 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
-            <p>I welcome inquiries about collaboration, academic discussions, or teaching opportunities. Feel free to reach out through the following channels:</p>
+            <p>I welcome inquiries about collaboration, academic discussions, or research opportunities. Feel free to reach out through the following channels:</p>
             
             <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:yacine.sba@ictp.it">yacine.sba@ictp.it</a></p>
-                <p><strong>Affiliation:</strong> Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy</p>
+                <p><strong>Email:</strong> <a href="mailto:yacine.rezoug@ictp.it">yacine.rezoug@ictp.it</a></p>
+                <p><strong>Primary Affiliation:</strong> Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy</p>
+                <p><strong>Secondary Affiliation:</strong> RICAM (Radon Institute for Computational and Applied Mathematics)</p>
                 <p><strong>Research Group:</strong> Mathematics Section</p>
             </div>
 
@@ -344,8 +412,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Yacine SBA - Mathematician & Educator</p>
-        <p>Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy</p>
+        <p>&copy; 2026 Malek Yacine Rezoug - Mathematician & Researcher</p>
+        <p>ICTP, Trieste, Italy | RICAM</p>
     </footer>
 </body>
 </html>
