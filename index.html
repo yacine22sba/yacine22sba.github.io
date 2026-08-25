@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yacine SBA - Professeur</title>
+    <title>Yacine SBA - Mathematician & Educator</title>
     <style>
         * {
             margin: 0;
@@ -94,7 +94,7 @@
         section h2 {
             color: #1f4788;
             font-size: 2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             border-bottom: 2px solid #1f4788;
             padding-bottom: 0.5rem;
         }
@@ -104,6 +104,13 @@
             font-size: 1.3rem;
             margin-top: 1.5rem;
             margin-bottom: 0.8rem;
+        }
+
+        section h4 {
+            color: #333;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         section p {
@@ -120,6 +127,68 @@
 
         li {
             margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        /* Education Block */
+        .education-item {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #2d5aa8;
+            border-radius: 5px;
+        }
+
+        .education-item .degree {
+            font-weight: bold;
+            color: #1f4788;
+            font-size: 1.1rem;
+        }
+
+        .education-item .institution {
+            color: #2d5aa8;
+            font-style: italic;
+            margin-top: 0.3rem;
+        }
+
+        .education-item .dates {
+            color: #999;
+            font-size: 0.95rem;
+            margin-top: 0.3rem;
+        }
+
+        .education-item .description {
+            margin-top: 0.8rem;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Profile Section */
+        .profile-intro {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #1f4788;
+        }
+
+        .profile-intro p {
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* Research Interests */
+        .research-interests {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .research-interests p {
+            color: #333;
+            font-size: 1.05rem;
+            line-height: 1.8;
         }
 
         /* Contact Info */
@@ -138,6 +207,15 @@
             color: #1f4788;
         }
 
+        .contact-info a {
+            color: #2d5aa8;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
         /* Footer */
         footer {
             background: #333;
@@ -149,6 +227,7 @@
 
         footer p {
             margin: 0;
+            color: white;
         }
 
         /* Responsive */
@@ -175,112 +254,98 @@
     <!-- Header -->
     <header>
         <h1>Yacine SBA</h1>
-        <p>Professeur - Enseignant Passionné</p>
+        <p>Mathematician & Educator | ICTP Postgraduate Fellow</p>
     </header>
 
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#a-propos">À Propos</a></li>
-            <li><a href="#cours">Cours</a></li>
-            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research Interests</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Accueil -->
-        <section id="accueil">
-            <h2>Bienvenue</h2>
-            <p>Bonjour et bienvenue sur mon site! Je suis un professeur dévoué avec plusieurs années d'expérience dans l'enseignement. Mon objectif est d'aider les étudiants à réussir en offrant un enseignement de qualité, adapté et personnalisé.</p>
-            <p>N'hésitez pas à explorer les différentes sections de ce site pour en savoir plus sur mes services et mon expérience.</p>
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>Profile</h2>
+            <div class="profile-intro">
+                <p>I completed my Bachelor's and Master's studies in Mathematics at Djillali Liabès University, Algeria, where I specialized in functional analysis and differential equations. I am currently enrolled in the Postgraduate Diploma Programme in Mathematics at the Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy. My research interests include analysis, partial differential equations, geometry, dynamical systems, and optimal transport.</p>
+            </div>
         </section>
 
-        <!-- À Propos -->
-        <section id="a-propos">
-            <h2>À Propos de Moi</h2>
-            <h3>Qui suis-je?</h3>
-            <p>Je suis un professeur passionné par l'enseignement et la transmission de connaissances. Avec plusieurs années d'expérience, j'ai développé une expertise dans plusieurs domaines et une approche pédagogique qui met l'accent sur l'engagement et la réussite des étudiants.</p>
-            
-            <h3>Ma Philosophie</h3>
-            <p>Je crois que chaque étudiant a le potentiel de réussir. Mon rôle est de:</p>
-            <ul>
-                <li>Créer un environnement d'apprentissage positif et inclusif</li>
-                <li>Adapter mon enseignement aux besoins individuels</li>
-                <li>Encourager la pensée critique et l'autonomie</li>
-                <li>Rendre l'apprentissage engageant et motivant</li>
-            </ul>
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
 
-            <h3>Qualifications</h3>
-            <ul>
-                <li>Licence en Éducation</li>
-                <li>Master Spécialisé en Pédagogie</li>
-                <li>Certifications Professionnelles Avancées</li>
-                <li>Plus de 10 ans d'expérience d'enseignement</li>
-            </ul>
-        </section>
-
-        <!-- Cours -->
-        <section id="cours">
-            <h2>Mes Cours</h2>
-            
-            <h3>📚 Mathématiques</h3>
-            <p>Algèbre, Géométrie, Calcul, Statistiques et Probabilités. Je propose un enseignement progressif adapté à tous les niveaux, du lycée aux études supérieures.</p>
-
-            <h3>💻 Informatique</h3>
-            <p>Programmation, Web Development, Bases de Données, et Développement Logiciel. Apprentissage des langages modernes et des meilleures pratiques en développement.</p>
-
-            <h3>🔬 Sciences</h3>
-            <p>Physique, Chimie, et Biologie. Compréhension des principes scientifiques fondamentaux avec une approche pratique et expérimentale.</p>
-
-            <h3>📖 Français</h3>
-            <p>Littérature, Grammaire, Orthographe, et Expression Écrite. Perfectionnement de la maîtrise de la langue française et de la communication.</p>
-        </section>
-
-        <!-- Expérience -->
-        <section id="experience">
-            <h2>Expérience Professionnelle</h2>
-            
-            <h3>2020 - Présent</h3>
-            <p><strong>Professeur Principal</strong> - École/Université</p>
-            <p>Enseignement de cours magistraux, supervision de projets étudiants, recherche pédagogique et développement de nouveau cursus. Direction de plusieurs classes et encadrement d'étudiants.</p>
-
-            <h3>2018 - 2020</h3>
-            <p><strong>Formateur Senior</strong></p>
-            <p>Formation professionnelle continue et développement des compétences pour divers publics. Création de programmes de formation personnalisés et coaching individuel.</p>
-
-            <h3>2016 - 2018</h3>
-            <p><strong>Enseignant</strong> - Enseignement Secondaire</p>
-            <p>Début de carrière dans l'enseignement secondaire avec d'excellents résultats. Construction de base solide en pédagogie et gestion de classe.</p>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Me Contacter</h2>
-            <p>Je serais ravi de discuter de vos besoins en matière d'enseignement ou de formation. N'hésitez pas à me contacter par l'un des moyens suivants:</p>
-            
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:yacine22sba@gmail.com" style="color: #1f4788; text-decoration: none;">yacine22sba@gmail.com</a></p>
-                <p><strong>Téléphone:</strong> +212 6XX XXX XXX</p>
-                <p><strong>Localisation:</strong> Maroc</p>
-                <p><strong>Horaires de consultation:</strong> Lundi - Vendredi, 9h - 18h</p>
+            <div class="education-item">
+                <div class="degree">Postgraduate Diploma Programme in Mathematics</div>
+                <div class="institution">Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy</div>
+                <div class="dates">2025 – Present</div>
+                <div class="description">
+                    <p>Coursework includes Riemannian Geometry, Partial Differential Equations, Functional Analysis, Complex Analysis, Dynamical Systems, and Algebraic Topology. Developed a broad and rigorous foundation in modern mathematics through intensive coursework, examinations, and independent study.</p>
+                </div>
             </div>
 
-            <p>Vous pouvez aussi me trouver sur les réseaux sociaux:</p>
+            <div class="education-item">
+                <div class="degree">Master 2 in Functional Analysis and Differential Equations</div>
+                <div class="institution">Djillali Liabès University, Algeria</div>
+                <div class="dates">September 2023 – June 2025</div>
+                <div class="description">
+                    <p>Completed a research-oriented Master's programme with substantial training in functional analysis, topological methods, nonlinear analysis, stochastic differential equations, bifurcation theory, and differential inclusions. Master's thesis focused on optimal transport, including Monge–Kantorovich theory, Wasserstein spaces, and aspects of the dynamical formulation.</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree">Bachelor's Degree in Mathematics</div>
+                <div class="institution">Djillali Liabès University, Algeria</div>
+                <div class="dates">December 2020 – June 2023</div>
+            </div>
+        </section>
+
+        <!-- Research Interests Section -->
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="research-interests">
+                <p><strong>Primary Areas:</strong></p>
+                <ul>
+                    <li>Analysis and Functional Analysis</li>
+                    <li>Partial Differential Equations (PDEs)</li>
+                    <li>Riemannian Geometry</li>
+                    <li>Optimal Transport Theory</li>
+                    <li>Dynamical Systems</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Specialized Topics:</strong> Monge–Kantorovich theory, Wasserstein spaces, differential inclusions, bifurcation theory, stochastic differential equations, and topological methods.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>I welcome inquiries about collaboration, academic discussions, or teaching opportunities. Feel free to reach out through the following channels:</p>
+            
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:yacine.sba@ictp.it">yacine.sba@ictp.it</a></p>
+                <p><strong>Affiliation:</strong> Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy</p>
+                <p><strong>Research Group:</strong> Mathematics Section</p>
+            </div>
+
+            <p>You can also find me on academic platforms:</p>
             <ul>
-                <li><a href="#" style="color: #1f4788;">LinkedIn</a></li>
-                <li><a href="#" style="color: #1f4788;">Facebook</a></li>
-                <li><a href="#" style="color: #1f4788;">Twitter</a></li>
+                <li><a href="#" style="color: #2d5aa8;">ResearchGate</a></li>
+                <li><a href="#" style="color: #2d5aa8;">ORCID</a></li>
+                <li><a href="#" style="color: #2d5aa8;">LinkedIn</a></li>
             </ul>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Yacine SBA - Tous droits réservés.</p>
-        <p>Site créé avec passion pour partager mon expérience en enseignement</p>
+        <p>&copy; 2026 Yacine SBA - Mathematician & Educator</p>
+        <p>Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy</p>
     </footer>
 </body>
 </html>
