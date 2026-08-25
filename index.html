@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professeur - Yacine SBA</title>
+    <title>Yacine SBA - Professeur</title>
     <style>
         * {
             margin: 0;
@@ -12,240 +12,130 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f4f4f4;
         }
 
-        /* Header/Navigation */
+        /* Header */
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1f4788 0%, #2d5aa8 100%);
             color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        nav h1 {
-            font-size: 1.8rem;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        nav a:hover {
-            opacity: 0.8;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 6rem 2rem;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .btn {
-            background-color: white;
-            color: #667eea;
-            padding: 0.8rem 2rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Sections */
-        section {
-            padding: 4rem 0;
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            color: #667eea;
-        }
-
-        /* About Section */
-        .about {
-            background: white;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .about-text p {
-            margin-bottom: 1rem;
-            color: #666;
-        }
-
-        /* Courses Section */
-        .courses {
-            background: #f9f9f9;
-        }
-
-        .courses-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .course-card {
-            background: white;
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .course-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .course-card h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .course-card p {
-            color: #666;
-            margin-bottom: 1rem;
-        }
-
-        .course-level {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
-        /* Experience Section */
-        .experience {
-            background: white;
-        }
-
-        .timeline {
-            position: relative;
-            padding: 2rem 0;
-        }
-
-        .timeline-item {
-            margin-bottom: 2rem;
-            padding-left: 3rem;
-            border-left: 3px solid #667eea;
-            position: relative;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -10px;
-            top: 0;
-            width: 20px;
-            height: 20px;
-            background: #667eea;
-            border-radius: 50%;
-        }
-
-        .timeline-item h3 {
-            color: #667eea;
+        header h1 {
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
 
-        .timeline-item p {
-            color: #666;
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
         }
 
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
+        /* Navigation */
+        nav {
+            background: #f5f5f5;
+            padding: 0;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        .contact h2 {
-            color: white;
-            margin-bottom: 2rem;
-        }
-
-        .contact-links {
+        nav ul {
+            list-style: none;
             display: flex;
             justify-content: center;
-            gap: 2rem;
             flex-wrap: wrap;
-            margin-bottom: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .contact-links a {
-            color: white;
+        nav li {
+            border-right: 1px solid #ddd;
+        }
+
+        nav li:last-child {
+            border-right: none;
+        }
+
+        nav a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: #333;
             text-decoration: none;
-            font-size: 1.1rem;
-            transition: opacity 0.3s;
+            transition: background 0.3s;
         }
 
-        .contact-links a:hover {
-            opacity: 0.8;
+        nav a:hover {
+            background: #e8e8e8;
+            color: #1f4788;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-left: 4px solid #1f4788;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1f4788;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #1f4788;
+            padding-bottom: 0.5rem;
+        }
+
+        section h3 {
+            color: #2d5aa8;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+
+        .contact-info strong {
+            color: #1f4788;
         }
 
         /* Footer */
@@ -254,130 +144,143 @@
             color: white;
             text-align: center;
             padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            nav ul {
-                gap: 1rem;
-                font-size: 0.9rem;
-            }
-
-            .hero h2 {
+            header h1 {
                 font-size: 2rem;
             }
 
-            .about-content {
-                grid-template-columns: 1fr;
+            nav a {
+                padding: 0.8rem 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
             }
 
             section h2 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Header -->
     <header>
-        <nav>
-            <h1>Prof. Yacine SBA</h1>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#courses">Cours</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Yacine SBA</h1>
+        <p>Professeur - Enseignant Passionné</p>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Bienvenue!</h2>
-        <p>Professeur passionné par l'enseignement et l'innovation pédagogique</p>
-        <a href="#contact" class="btn">Me contacter</a>
-    </section>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À Propos</a></li>
+            <li><a href="#cours">Cours</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>À propos de moi</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Qui suis-je?</h3>
-                    <p>Je suis un professeur dévoué avec plusieurs années d'expérience dans l'enseignement. Ma passion est d'aider les étudiants à atteindre leurs objectifs académiques et professionnels.</p>
-                    <p>Je crois en une pédagogie moderne, interactive et adaptée aux besoins de chaque apprenant. Mon approche combine théorie solide et applications pratiques.</p>
-                    <p>Spécialisé en plusieurs domaines, je mets à disposition mes connaissances et mon expérience pour former les générations futures.</p>
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/400x400?text=Photo+Professeur" alt="Photo" style="width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Accueil -->
+        <section id="accueil">
+            <h2>Bienvenue</h2>
+            <p>Bonjour et bienvenue sur mon site! Je suis un professeur dévoué avec plusieurs années d'expérience dans l'enseignement. Mon objectif est d'aider les étudiants à réussir en offrant un enseignement de qualité, adapté et personnalisé.</p>
+            <p>N'hésitez pas à explorer les différentes sections de ce site pour en savoir plus sur mes services et mon expérience.</p>
+        </section>
 
-    <!-- Courses Section -->
-    <section class="courses" id="courses">
-        <div class="container">
+        <!-- À Propos -->
+        <section id="a-propos">
+            <h2>À Propos de Moi</h2>
+            <h3>Qui suis-je?</h3>
+            <p>Je suis un professeur passionné par l'enseignement et la transmission de connaissances. Avec plusieurs années d'expérience, j'ai développé une expertise dans plusieurs domaines et une approche pédagogique qui met l'accent sur l'engagement et la réussite des étudiants.</p>
+            
+            <h3>Ma Philosophie</h3>
+            <p>Je crois que chaque étudiant a le potentiel de réussir. Mon rôle est de:</p>
+            <ul>
+                <li>Créer un environnement d'apprentissage positif et inclusif</li>
+                <li>Adapter mon enseignement aux besoins individuels</li>
+                <li>Encourager la pensée critique et l'autonomie</li>
+                <li>Rendre l'apprentissage engageant et motivant</li>
+            </ul>
+
+            <h3>Qualifications</h3>
+            <ul>
+                <li>Licence en Éducation</li>
+                <li>Master Spécialisé en Pédagogie</li>
+                <li>Certifications Professionnelles Avancées</li>
+                <li>Plus de 10 ans d'expérience d'enseignement</li>
+            </ul>
+        </section>
+
+        <!-- Cours -->
+        <section id="cours">
             <h2>Mes Cours</h2>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <h3>📚 Mathématiques</h3>
-                    <p>Algèbre, Géométrie, Calcul et Statistiques. Des fondations solides pour tous les niveaux.</p>
-                    <span class="course-level">Débutant - Avancé</span>
-                </div>
-                <div class="course-card">
-                    <h3>💻 Informatique</h3>
-                    <p>Programmation, Web Development, et Développement logiciel. Apprenez les langages modernes.</p>
-                    <span class="course-level">Intermédiaire - Avancé</span>
-                </div>
-                <div class="course-card">
-                    <h3>🔬 Sciences</h3>
-                    <p>Physique, Chimie, et Biologie. Comprendre le monde qui nous entoure.</p>
-                    <span class="course-level">Tous niveaux</span>
-                </div>
-            </div>
-        </div>
-    </section>
+            
+            <h3>📚 Mathématiques</h3>
+            <p>Algèbre, Géométrie, Calcul, Statistiques et Probabilités. Je propose un enseignement progressif adapté à tous les niveaux, du lycée aux études supérieures.</p>
 
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <h2>Mon Expérience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Professeur Principal - École/Université (2020 - Présent)</h3>
-                    <p>Enseignement de cours magistraux, supervision de projets étudiants, et recherche pédagogique.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Formateur Senior (2018 - 2020)</h3>
-                    <p>Formation professionnelle et développement des compétences pour divers publics.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Enseignant (2016 - 2018)</h3>
-                    <p>Début de carrière dans l'enseignement secondaire avec excellents résultats.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h3>💻 Informatique</h3>
+            <p>Programmation, Web Development, Bases de Données, et Développement Logiciel. Apprentissage des langages modernes et des meilleures pratiques en développement.</p>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
+            <h3>🔬 Sciences</h3>
+            <p>Physique, Chimie, et Biologie. Compréhension des principes scientifiques fondamentaux avec une approche pratique et expérimentale.</p>
+
+            <h3>📖 Français</h3>
+            <p>Littérature, Grammaire, Orthographe, et Expression Écrite. Perfectionnement de la maîtrise de la langue française et de la communication.</p>
+        </section>
+
+        <!-- Expérience -->
+        <section id="experience">
+            <h2>Expérience Professionnelle</h2>
+            
+            <h3>2020 - Présent</h3>
+            <p><strong>Professeur Principal</strong> - École/Université</p>
+            <p>Enseignement de cours magistraux, supervision de projets étudiants, recherche pédagogique et développement de nouveau cursus. Direction de plusieurs classes et encadrement d'étudiants.</p>
+
+            <h3>2018 - 2020</h3>
+            <p><strong>Formateur Senior</strong></p>
+            <p>Formation professionnelle continue et développement des compétences pour divers publics. Création de programmes de formation personnalisés et coaching individuel.</p>
+
+            <h3>2016 - 2018</h3>
+            <p><strong>Enseignant</strong> - Enseignement Secondaire</p>
+            <p>Début de carrière dans l'enseignement secondaire avec d'excellents résultats. Construction de base solide en pédagogie et gestion de classe.</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
             <h2>Me Contacter</h2>
-            <div class="contact-links">
-                <a href="mailto:yacine22sba@example.com">📧 Email</a>
-                <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
-                <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
-                <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+            <p>Je serais ravi de discuter de vos besoins en matière d'enseignement ou de formation. N'hésitez pas à me contacter par l'un des moyens suivants:</p>
+            
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:yacine22sba@gmail.com" style="color: #1f4788; text-decoration: none;">yacine22sba@gmail.com</a></p>
+                <p><strong>Téléphone:</strong> +212 6XX XXX XXX</p>
+                <p><strong>Localisation:</strong> Maroc</p>
+                <p><strong>Horaires de consultation:</strong> Lundi - Vendredi, 9h - 18h</p>
             </div>
-            <p>N'hésitez pas à me contacter pour toute question ou collaboration!</p>
-        </div>
-    </section>
+
+            <p>Vous pouvez aussi me trouver sur les réseaux sociaux:</p>
+            <ul>
+                <li><a href="#" style="color: #1f4788;">LinkedIn</a></li>
+                <li><a href="#" style="color: #1f4788;">Facebook</a></li>
+                <li><a href="#" style="color: #1f4788;">Twitter</a></li>
+            </ul>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Prof. Yacine SBA. Tous droits réservés.</p>
+        <p>&copy; 2026 Yacine SBA - Tous droits réservés.</p>
+        <p>Site créé avec passion pour partager mon expérience en enseignement</p>
     </footer>
 </body>
 </html>
